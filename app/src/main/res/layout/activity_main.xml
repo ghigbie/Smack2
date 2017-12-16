@@ -23,9 +23,23 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent">
 
-        </android.support.design.widget.NavigationView>
+            <include
+                android:id="@+id/nav_drawer_header_include"
+                layout="@layout/nav_header_main" />
+
+            <ListView
+                android:id="@+id/channel_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nav_drawer_header_include">
+
+            </ListView>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
