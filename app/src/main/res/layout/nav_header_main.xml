@@ -7,6 +7,7 @@
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
+    android:backgroundTint="@color/colorPrimary"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     tools:layout_editor_absoluteY="81dp">
 
@@ -14,17 +15,17 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button"
         app:srcCompat="@drawable/profiledefault" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="352dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         tools:text="Android Studio"
@@ -35,7 +36,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="16dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         tools:text="android@android.com"
@@ -44,17 +45,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="32dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/login"
+        android:layout_marginStart="16dp"
         android:background="@color/colorPrimary"
+        android:text="@string/login"
         android:textColor="@color/colorTextWhite"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/button2"
@@ -67,7 +67,6 @@
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:srcCompat="@drawable/addchannelbutton" />
 
 </android.support.constraint.ConstraintLayout>
