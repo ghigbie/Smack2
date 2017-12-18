@@ -53,6 +53,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/login"
         android:textColor="@color/colorTextWhite"
+        android:onClick="loginButtonNavClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -65,6 +66,7 @@
         android:padding="5dp"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
+        android:onClick="addChannelButtonNavClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/addchannelbutton" />
