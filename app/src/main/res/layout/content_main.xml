@@ -9,7 +9,7 @@
     tools:showIn="@layout/app_bar_main">
 
     <TextView
-        android:id="@+id/please"
+        android:id="@+id/mainChannelName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -19,19 +19,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@id/message"
+        app:layout_constraintBottom_toTopOf="@id/messageTextField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/please"></android.support.v7.widget.RecyclerView>
+        app:layout_constraintTop_toBottomOf="@id/mainChannelName" />
 
     <EditText
-        android:id="@+id/message"
+        android:id="@+id/messageTextField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
@@ -44,16 +45,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/sendMessageButton"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:tint="@color/colorPrimary"
+        android:onClick="sendMessageButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:srcCompat="@drawable/ic_menu_send" />
 
 </android.support.constraint.ConstraintLayout>
